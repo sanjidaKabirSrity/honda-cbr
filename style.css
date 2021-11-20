@@ -16,10 +16,43 @@ h2 {
 }
 
 /* header start  */
-header {
+.full-container {
   background-color: #264653;
   color: white;
 }
+/* navbar section  */
+.navbar {
+  background-color: #264653;
+}
+.logo-img {
+  width: 190px;
+}
+.navbar-toggler {
+  background-color: #f15d3c;
+  border: none;
+  outline: none;
+  padding: 10px 6px;
+}
+.navbar-toggler span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border: 1px;
+  background-color: white;
+}
+.navbar-toggler span + span {
+  margin-top: 4px;
+  width: 18px;
+  margin-left: 4px;
+}
+.navbar-toggler span + span + span {
+  width: 10px;
+  margin-left: 12px;
+}
+.navbar-nav a:hover {
+  color: #f15d3c !important;
+}
+/* heading section  */
 .extra-p {
   font-size: 14px;
   font-weight: 600;
@@ -29,14 +62,14 @@ p {
   font-weight: 300;
 }
 .btn {
-  background-color: #e76f51;
+  background-image: linear-gradient(#f16137, #ee2c69);
   font-size: 18px;
   font-weight: 500;
   color: white;
   padding: 7px 25px;
 }
 .modal-title {
-  color: #e76f51;
+  color: #f15d3c;
 }
 .modal-body {
   color: #264653;
@@ -47,11 +80,29 @@ p {
 #feture {
   font-size: 14px;
   font-weight: 600;
-  color: #e76f51;
+  color: #f15d3c;
 }
 
 h2 {
   color: #001f2b;
+}
+#feture {
+  display: inline-block;
+  position: relative;
+}
+#feture::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background-color: #f15d3c;
+  position: absolute;
+  left: 33px;
+  bottom: -7px;
+  transition: 0.5s;
+}
+#feture:hover::after {
+  width: 100%;
+  left: 0px;
 }
 .gray-img {
   cursor: pointer;
@@ -65,9 +116,34 @@ h2 {
 }
 /* gray scale img end */
 
+/* latest news section start  */
+h3 {
+  font-weight: 600;
+  font-size: 28px;
+}
+.card {
+  border-radius: 10px;
+}
+.card-footer {
+  border-radius: 10px !important;
+}
+.news-img-4 {
+  border-radius: 10px;
+}
+.different-btn {
+  background: none;
+  color: #f15d3c;
+  border: 1px solid #f15d3c;
+}
+.different-btn:hover {
+  background-image: linear-gradient(#f16137, #ee2c69);
+  color: white;
+}
+/* latest news section end */
+
 /* cleints review section start  */
 #clients {
-  color: #e76f51;
+  color: #f15d3c;
 }
 .fa-star {
   color: #e77c40;
@@ -174,9 +250,33 @@ form input::placeholder {
 }
 /* contact section end */
 
+/* footer section start  */
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding-right: 40px;
+}
+footer a:hover {
+  color: white;
+}
+.get {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* footer section end  */
+
 /* Mediary query  */
-@media screen (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .map {
     margin-left: 0px;
+  }
+  .footer-container {
+    position: relative;
+  }
+  small {
+    position: absolute;
+    bottom: 0px;
   }
 }

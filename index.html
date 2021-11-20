@@ -7,7 +7,7 @@
     <!-- fontawesome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon link  -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo-fav.png" type="image/x-icon">
     <!-- bootstrap css link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- css main link  -->
@@ -16,12 +16,37 @@
 </head>
 <body>
     <!-- header start -->
-    <header>
-        <!-- nav  -->
+    <header class="full-container">
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-md py-0 fixed-top">
+          <div class="container-md">
+            <a class="navbar-brand py-0" href="#">
+              <img src="images/logo.png" alt="logo" class="img-fluid logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+              <!-- class="navbar-toggler-icon"  -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto text-center">
+                <a class="nav-link active text-white px-3" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link text-white px-3" href="#shop">Shop</a>
+                <a class="nav-link text-white px-3" href="#news">News</a>
+                <a class="nav-link text-white px-3" href="#contact">Contact</a>
+                <button type="button" class="btn ms-md-5">Login</button>
+              </div>
+              
+            </div>
+          </div>
+        </nav>
+        <!-- navbar end -->
+        <!-- heading section start -->
         <section class="container">
             <div class="row py-5">
                 <div class="col-lg-6 col-12 my-auto text-center text-lg-start">
-                    <p class="text-muted extra-p">Computer-controlled digital transistorized with electronic advance</p>
+                    <p class="text-muted extra-p pt-5 pt-lg-0">Computer - controlled digital transistorized with electronic advance</p>
                     <h1>Honda CBR 300R</h1>
                     <p>2021 CBR300R OVERVIEW - Honda If you've got a soft spot for sportbike design and Grand Prix stylings, then the 2021 Honda CBR300R is your sweet spot between</p>
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Purchase</button>
@@ -50,13 +75,14 @@
                 </div>
             </div>
         </section>
+        <!-- heading section end  -->
     </header>
     <!-- header end -->
 
     <!-- main section start  -->
     <main>
         <!-- gray scale img section start  -->
-        <section class="container">
+        <section class="container" id="shop">
              <div class="text-center">
                  <h2 class="mt-5 pt-2">Fetured Bikes 2021</h2>
                  <p id="feture">Best bike collection</p>
@@ -74,6 +100,58 @@
              </div>
         </section>
         <!-- gray scale img section start  -->
+
+        <!-- latest news section start  -->
+        <section class="container" id="news">
+          <div class="text-center py-5">
+            <h2>Latest News</h2>
+        </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <div class="p-3">
+                  <img src="images/bike-2.png" class="card-img-top img-fluid" alt="bike">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Ducati XDIAVEL S-73</h3>
+                  <p class="card-text">XDiavel, the Ducati cruiser that combines the best of both worlds, is renewed, still remaining true to its philosophy.</p>
+                </div>
+                <div class="card-footer border-0 bg-white">
+                  <button type="button" class="btn mb-2">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="p-3">
+                  <img src="images/bike-3.png" class="card-img-top" alt="bike">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Motorcycles and Scooters</h3>
+                  <p class="card-text">Buy Motorcycles & Scooters and get the best deals at the lowest prices on eBay! Great Savings & Free Delivery</p>
+                </div>
+                <div class="card-footer border-0 bg-white">
+                  <button type="button" class="btn mb-2 different-btn">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="p-3">
+                  <img src="images/bike-4.jpg" class="card-img-top news-img-4" alt="bike">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">2021 Honda CBR500R</h3>
+                  <p class="card-text">Honda Is it any wonder why the Honda CBR500R is one of our most popular sportbikes? It just gets so many things right.</p>
+                </div>
+                <div class="card-footer border-0 bg-white">
+                  <button type="button" class="btn mb-2 different-btn">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- latest news section end -->
 
         <!-- clients review section start -->
         <section class="container py-5">
@@ -225,7 +303,7 @@
         </section>
         <!-- FAQ section end -->
 
-<!-- company loction section  -->
+        <!-- company loction section  -->
         <section class="location container-fluid">
               <div class="row loca">
                 <div class="col-md-6 col-12 location-1 d-flex justify-content-center align-items-lg-center">
@@ -244,7 +322,7 @@
         <!-- company loction end -->
 
         <!-- contact section start  -->
-        <div class="contacts py-5">
+        <div class="contacts py-5" id="contact">
           <section class="container d-flex justify-content-center align-items-center py-5 px-4">
             <div class="row contact shadow">
               <div class="col-md-6 col-12 contact-img p-5 d-flex justify-content-center align-items-center con-img">
@@ -293,7 +371,7 @@
                       <input type="text" placeholder="Write Us a message">
                     </div>
                   </form>
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">SEND MESSAGE</button>
+                  <button type="button" class="btn">SEND MESSAGE</button>
               </div>
             </div>
           </section>
@@ -302,6 +380,37 @@
 
     </main>
     <!-- main section end -->
+
+    <!-- footer section start  -->
+    <footer class="full-container">
+      <section class="container py-5 footer-container">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col col-md-9">
+            <p>
+              <a href="#">Download</a>
+              <a href="#">License</a>
+            </p>
+            <p>
+              <a href="#">About</a>
+              <a href="#">Features</a>
+              <a href="#">Pricing</a>
+              <a href="#">Careers</a>
+              <a href="#">Help</a>
+              <a href="#">Privacy Policy</a>
+            </p>
+            <p><small>&copy; 2021 bike. All rights reserved</small></p>
+          </div>
+          <!-- <div class="text-end"> -->
+          <div class="col col-md-3">
+          <p class="pe-4 get">Get the app</p>
+            <img src="images/Google-Play-Badge.png" alt="">
+            <br>
+            <img src="images/App-Store-Badge.png" alt="" class="mt-3">
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- footer section end -->
 
     <!-- bootstrap js link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
